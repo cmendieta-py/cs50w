@@ -8,4 +8,15 @@
         <li>Destino: {{ flight.destination }}</li>
         <li>Duración: {{ flight.duration }} minutos</li>
     </ul>
+
+    <h2>Pasajeros</h2>
+    <ul>
+        {% for passenger in passengers %}
+            <li>{{ passenger.first }} {{ passenger.last }}</li>
+        {% empty %}
+            <li>No hay pasajeros.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'index' %}">Regresar</a>
 {% endblock %}
