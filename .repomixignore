@@ -1,0 +1,18 @@
+# Ignorar entorno virtual
+venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# Git
+.git/
+
+# Node
+node_modules/
+
+# Mantener base de datos SQLite
+!db.sqlite3
